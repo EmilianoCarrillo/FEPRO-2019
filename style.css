@@ -456,7 +456,6 @@ button:hover{
 	#Categorias .container{
 		grid-template-rows: auto 1fr;
 		margin: 0px 0px 55px 55px;
-		overflow: scroll !important;
 	}
 	#Categorias p{
 		font-size: .8em;
