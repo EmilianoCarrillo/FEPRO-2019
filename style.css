@@ -451,11 +451,21 @@ button:hover{
 .subcategoria{
 	color: white;
 }
+.sectionTitle{
+	transform-origin: left;
+	transform: translate(33px, 140px) rotate(-90deg) ;
+	font-size: 1.3em !important;
+	color: #fff6 !important;
+	display: none;
+}
 
 @media (max-width: 800px){
 	#Categorias .container{
 		grid-template-rows: auto 1fr;
 		margin: 0px 0px 55px 55px;
+	}
+	.sectionTitle{
+		display: inline-block;
 	}
 	#Categorias p{
 		font-size: .8em;
