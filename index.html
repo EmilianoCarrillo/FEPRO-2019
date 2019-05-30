@@ -16,13 +16,30 @@
 </head>
 <body>
 
-    <ul id="menu">
+        
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="Menu" class="menus">
+                <li data-menuanchor="hero" class="active"><a href="#hero" onclick="hideHamMenu()">Inicio</a></li>
+                <li data-menuanchor="acercade"><a href="#acercade" onclick="hideHamMenu()">Acerca de</a></li>
+                <li data-menuanchor="lugar"><a href="#lugar" onclick="hideHamMenu()">Lugar</a></li>
+                <li data-menuanchor="categorias"><a href="#categorias" onclick="hideHamMenu()">Categorías</a></li>
+            </ul>
+        </div>
+    </nav>
+            
+
+    <ul id="menu" class="menus">
         <li data-menuanchor="hero" class="active"><a href="#hero">FEPRO</a></li>
         <li data-menuanchor="acercade"><a href="#acercade">Acerca de</a></li>
         <li data-menuanchor="lugar"><a href="#lugar">Lugar</a></li>
         <li data-menuanchor="categorias"><a href="#categorias">Categorías</a></li>
-        <li data-menuanchor="topicos"><a href="#topicos">Tópicos</a></li>
-        <li data-menuanchor="fases"><a href="#fases">Fases</a></li>
+        <!-- <li data-menuanchor="topicos"><a href="#topicos">Tópicos</a></li>
+        <li data-menuanchor="fases"><a href="#fases">Fases</a></li> -->
     </ul>
     <ul id="SocialMedia">
         <li><a href="https://twitter.com/FePro_" target="blank"><i class="fab fa-twitter"></i></a></li>
@@ -212,7 +229,7 @@
                 </div>
             </div> 
         </div>
-        <div class="section" id="Topicos">
+        <!-- <div class="section" id="Topicos">
             <div class="container containerTopicos">
                 
             </div>
@@ -243,7 +260,7 @@
                     Fase5
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     
 
@@ -253,7 +270,7 @@
     var myFullpage = new fullpage('#fullpage', {
         sectionsColor: ['#fff', '#fff', '#fff', '#3D6DBE', '#fff', '#fff', '#fff'],
         anchors: ['hero', 'acercade', 'lugar', 'categorias', 'topicos', 'fases'],
-        menu: '#menu',
+        menu: '.menus',
         lazyLoad: true,
         navigation: true,
         navigationTooltips: ['Inicio', 'lugar', 'Acerca de', 'Categorías', 'Tópicos', 'Fases'],
@@ -269,13 +286,18 @@
                 document.querySelectorAll(".fp-controlArrow").forEach((element) => {
                     element.classList.add("darkArrow");
                 });
-                
+                document.querySelectorAll("#menuToggle span").forEach((element) => {
+                    element.classList.add("darkMenu");
+                });
             } else{
                 document.querySelector("#menu").classList.remove("dark");
                 document.querySelector("#SocialMedia").classList.remove("dark");
                 document.querySelector("#fp-nav").classList.remove("dark");
                 document.querySelectorAll(".fp-controlArrow").forEach( (element) => {
                     element.classList.remove("darkArrow");
+                });
+                document.querySelectorAll("#menuToggle span").forEach((element) => {
+                    element.classList.remove("darkMenu");
                 });
             }
         }

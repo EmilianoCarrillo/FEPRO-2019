@@ -4,3 +4,8 @@ document.getElementById('demosMenu').addEventListener('change', function(e){
 });
 
 
+function hideHamMenu(){
+    document.querySelector("#menuToggle input").checked = false;
+    console.log(document.querySelector("#menuToggle input").checked);
+}
+
