@@ -413,8 +413,8 @@ button:hover{
 		grid-column: 1 / -1;
 	}
 }
-/* Categorias ----------------------------------------------------------------------------------------*/
 
+/* Categorias ----------------------------------------------------------------------------------------*/
 #Categorias .container{
 	margin: 100px 110px 55px 110px;
 	overflow: visible;
@@ -503,7 +503,7 @@ button:hover{
 
 }
 
-/*Hamburguer Menu*/
+/* Hamburger Menu ----------------------------------------------------------------------------------------*/
 #menuToggle {
 position: fixed;
 top: 25px;
@@ -595,4 +595,26 @@ transform: none;
 	#menuToggle{
 		display: none;
 	}
+}
+
+/* Recursos ----------------------------------------------------------------------------------------*/
+#Recursos .containerRecursos{
+	text-align: center;
+}
+#Recursos h1{
+	font-weight: bold;
+	font-size: 3.5em;
+	color: #F59F8D;
+	margin: 25px 50px;
+	text-shadow: #333;
+}
+#Recursos a, #Recursos a:visited{
+	font-size: 1.2em;
+	color: #3d6dbe;
+	-webkit-transition: all 0.1s ease-out; /* Safari<=6 Android<=4.3 */
+	transition: all 0.1s ease-out;
+}
+#Recursos a:hover, #Recursos a:active{
+	font-size: 1.2em;
+	color: #083d99;
 }

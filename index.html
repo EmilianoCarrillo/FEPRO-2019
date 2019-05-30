@@ -28,6 +28,7 @@
                 <li data-menuanchor="acercade"><a href="#acercade" onclick="hideHamMenu()">Acerca de</a></li>
                 <li data-menuanchor="lugar"><a href="#lugar" onclick="hideHamMenu()">Lugar</a></li>
                 <li data-menuanchor="categorias"><a href="#categorias" onclick="hideHamMenu()">Categorías</a></li>
+                <li data-menuanchor="recursos"><a href="#recursos" onclick="hideHamMenu()">Recursos</a></li>
             </ul>
         </div>
     </nav>
@@ -38,6 +39,7 @@
         <li data-menuanchor="acercade"><a href="#acercade">Acerca de</a></li>
         <li data-menuanchor="lugar"><a href="#lugar">Lugar</a></li>
         <li data-menuanchor="categorias"><a href="#categorias">Categorías</a></li>
+        <li data-menuanchor="recursos"><a href="#recursos">Recursos</a></li>
         <!-- <li data-menuanchor="topicos"><a href="#topicos">Tópicos</a></li>
         <li data-menuanchor="fases"><a href="#fases">Fases</a></li> -->
     </ul>
@@ -57,7 +59,7 @@
                 <img src="assets/clouds_right.png" class="rightClouds">
                 <div class="callToAction">
                     <img src="assets/logo/logo.png">
-                    <a href="archivos/convocatoria_FEPRO_2019.pdf" download>
+                    <a target="blank" href="archivos/convocatoria_FEPRO_2019.pdf" download>
                             <button>Descargar Convocatoria</button>                        
                     </a>
                 </div>
@@ -229,6 +231,14 @@
                 </div>
             </div> 
         </div>
+        <div class="section" id="Recursos">
+            <div class="containerRecursos">
+                <h1>Descargas</h1>
+                <ul class="recursosList">
+                    <li><a target="blank" href="/archivos/convocatoria_FEPRO_2019.pdf">Convocatoria PDF</a></li>
+                </ul>
+            </div>
+        </div>
         <!-- <div class="section" id="Topicos">
             <div class="container containerTopicos">
                 
@@ -268,12 +278,12 @@
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-        sectionsColor: ['#fff', '#fff', '#fff', '#3D6DBE', '#fff', '#fff', '#fff'],
-        anchors: ['hero', 'acercade', 'lugar', 'categorias', 'topicos', 'fases'],
+        sectionsColor: ['#fff', '#fff', '#fff', '#3D6DBE', '#fff'],
+        anchors: ['hero', 'acercade', 'lugar', 'categorias', 'recursos'],
         menu: '.menus',
         lazyLoad: true,
         navigation: true,
-        navigationTooltips: ['Inicio', 'lugar', 'Acerca de', 'Categorías', 'Tópicos', 'Fases'],
+        navigationTooltips: ['Inicio', 'lugar', 'Acerca de', 'Categorías', 'Recursos'],
         slidesNavigation: true,
         keyboardScrolling: true,
         responsiveWidth: 800,
