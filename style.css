@@ -562,7 +562,7 @@ transform: rotate(-45deg) translate(0, -1px);
 #Menu{
 	position: relative;
 	width: 180px;
-	height: 400px;
+	height: 100vh;
 	box-shadow: 0 0 10px #85888C;
 	margin: -50px 0 0 -50px;
 	padding: 50px;
